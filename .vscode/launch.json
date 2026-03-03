@@ -5,16 +5,15 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "type": "lldb",
+            "type": "cppdbg",
             "request": "launch",
             "name": "Launch Debug app",
-            "program": "${workspaceFolder}/build/AsyncHttpProxy",
+            "program": "${workspaceFolder}/build/bin/Debug/AsyncHttpProxy",
             "args": [
                 "5555"
             ],
-            "cwd": "${workspaceFolder}/build",
-            "preLaunchTask": "GCC: Build Debug",
-            "initCommands": ["settings set target.disable-aslr false"]
+            "cwd": "${workspaceFolder}/build/bin/Debug/",
+            "preLaunchTask": "GCC: Build Debug"
         }
     ]
 }
